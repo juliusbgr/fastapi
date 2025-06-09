@@ -10,7 +10,7 @@ app = FastAPI(
 )
 
 # Load trained model (loaded once when app starts)
-model = joblib.load("app/iris.mdl")
+model = joblib.load("iris.mdl")
 
 class IrisRequest(BaseModel):
     """
